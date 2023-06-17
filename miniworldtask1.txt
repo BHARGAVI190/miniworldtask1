@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class LoginPageSimulation {
+    public static void main(String[] args) {
+        // Predefined username and password
+        String predefinedUsername = "admin";
+        String predefinedPassword = "password";
+
+        // Prompt the user to enter username and password
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your username: ");
+        String enteredUsername = scanner.nextLine();
+        System.out.print("Enter your password: ");
+        String enteredPassword = scanner.nextLine();
+
+        // Verify the entered credentials
+        if (enteredUsername.equals(predefinedUsername) && enteredPassword.equals(predefinedPassword)) {
+            System.out.println("Login successful! Access granted.");
+        } else {
+            System.out.println("Invalid username or password. Access denied.");
+        }
+    }
+}
